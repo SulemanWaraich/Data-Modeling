@@ -24,4 +24,4 @@ const todoSchema = new mongoose.Schema(
 
     {timestamps: true});
 
-const Todo = mongoose.models("Todo", todoSchema);
+const Todo = mongoose.model("Todo", todoSchema);
