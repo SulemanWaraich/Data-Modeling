@@ -30,7 +30,11 @@ const patientSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        doctorVisit: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Doctor",
+        },
     },
     {timestamps: true});
 
-const Patient = mongoose.model("Patient", patientSchema);
+export const Patient = mongoose.model("Patient", patientSchema);
